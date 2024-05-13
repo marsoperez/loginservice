@@ -1,0 +1,646 @@
+{
+	"info": {
+		"_postman_id": "d74d1391-bba4-487b-bc24-c4a90661d0b5",
+		"name": "Login Service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5282957"
+	},
+	"item": [
+		{
+			"name": "Token",
+			"item": [
+				{
+					"name": "Admin",
+					"item": [
+						{
+							"name": "{{local}}/admin/unlock-account",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "gfg_token_header_key",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiRnJpIE1hciAxNSAyMDI0IDE1OjU4OjUxIEdNVCswODAwIChQaGlsaXBwaW5lIFN0YW5kYXJkIFRpbWUpIiwidXNlcklkIjoxMiwiaWF0IjoxNzEwNDg5NTMxfQ.cnqrh2VUH3vO1pTsBnvEclfij7wvWrN7V58aXoHakgU",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"emailAddress\": \"milmalinowskaya@meldedigital.com\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{local}}/admin/unlock-account",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"admin",
+										"unlock-account"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "{{local}}/admin/check-accounts",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "gfg_token_header_key",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiRnJpIE1hciAxNSAyMDI0IDE1OjU4OjUxIEdNVCswODAwIChQaGlsaXBwaW5lIFN0YW5kYXJkIFRpbWUpIiwidXNlcklkIjoxMiwiaWF0IjoxNzEwNDg5NTMxfQ.cnqrh2VUH3vO1pTsBnvEclfij7wvWrN7V58aXoHakgU",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{local}}/admin/check-accounts",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"admin",
+										"check-accounts"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "{{local}}/admin/deactivate-account",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "gfg_token_header_key",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiRnJpIE1hciAxNSAyMDI0IDE1OjU4OjUxIEdNVCswODAwIChQaGlsaXBwaW5lIFN0YW5kYXJkIFRpbWUpIiwidXNlcklkIjoxMiwiaWF0IjoxNzEwNDg5NTMxfQ.cnqrh2VUH3vO1pTsBnvEclfij7wvWrN7V58aXoHakgU",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"emailAddress\": \"milmalinowskaya@meldedigital.com\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{local}}/admin/deactivate-account",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"admin",
+										"deactivate-account"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "{{local}}/admin//assign-account-rights",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "gfg_token_header_key",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiRnJpIE1hciAxNSAyMDI0IDE1OjU4OjUxIEdNVCswODAwIChQaGlsaXBwaW5lIFN0YW5kYXJkIFRpbWUpIiwidXNlcklkIjoxMiwiaWF0IjoxNzEwNDg5NTMxfQ.cnqrh2VUH3vO1pTsBnvEclfij7wvWrN7V58aXoHakgU",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"emailAddress\": \"jirase2328@adstam.com\",\n    \"role\": {\n        \"name\":\"Finance\",\n        \"code\":\"fin\"\n    },\n    \"data\": [{\n        \"permission\": \"dealer.for-install\",\n        \"rights\" : [\"all\"]\n    },\n    {\n        \"permission\": \"dealer.home\",\n        \"rights\" : [\"write\",\"read\"]\n    },\n    {\n        \"permission\": \"dealer.ibas-user\",\n        \"rights\" : [\"read\"]\n    }]\n    \n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{local}}/admin/assign-account-rights",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"admin",
+										"assign-account-rights"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "{{local}}/admin//assign-role-permission",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "gfg_token_header_key",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiRnJpIE1hciAxNSAyMDI0IDE1OjU4OjUxIEdNVCswODAwIChQaGlsaXBwaW5lIFN0YW5kYXJkIFRpbWUpIiwidXNlcklkIjoxMiwiaWF0IjoxNzEwNDg5NTMxfQ.cnqrh2VUH3vO1pTsBnvEclfij7wvWrN7V58aXoHakgU",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"emailAddress\": \"jirase2328@adstam.com\",\n    \"role\":{\n        \"name\": \"Test Role\",\n        \"code\": \"test-code\"\n    },\n   \"permissions\": [\n        {\n            \"name\": \"Dealer Toup Report\",\n            \"code\": \"view-drs.topup-report\",\n            \"link\": \"http:/s2s.a101\",\n            \"ordering\": 11,\n            \"level\": \"CRUD\"\n        },\n        {\n            \"name\": \"Dealer Retailer Per Area\",\n            \"code\": \"view.drs.per-area\",\n            \"link\": \"http:/s2s.a102\",\n            \"ordering\": 11,\n            \"level\": \"CRU\"\n        }\n   ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{local}}/admin/assign-role-permission",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"admin",
+										"assign-role-permission"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "{{local}}/admin/create-permission",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "gfg_token_header_key",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiRnJpIE1hciAxNSAyMDI0IDE1OjU4OjUxIEdNVCswODAwIChQaGlsaXBwaW5lIFN0YW5kYXJkIFRpbWUpIiwidXNlcklkIjoxMiwiaWF0IjoxNzEwNDg5NTMxfQ.cnqrh2VUH3vO1pTsBnvEclfij7wvWrN7V58aXoHakgU",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"permission\": {\n        \"appName\": \"DEALER_DASHBOARD\",\n        \"name\":\"Dealer Retailer Verifier\",\n        \"code\":\"view.drs.ver-pending-dealer-request\",\n        \"link\": \"http://abc.com\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{local}}/admin/create-permission",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"admin",
+										"create-permission"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "{{local}}/admin/delete-account",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "gfg_token_header_key",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiRnJpIE1hciAxNSAyMDI0IDE1OjU4OjUxIEdNVCswODAwIChQaGlsaXBwaW5lIFN0YW5kYXJkIFRpbWUpIiwidXNlcklkIjoxMiwiaWF0IjoxNzEwNDg5NTMxfQ.cnqrh2VUH3vO1pTsBnvEclfij7wvWrN7V58aXoHakgU",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"emailAddress\": \"testemail@gmail.com\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{local}}/admin/delete-account",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"admin",
+										"delete-account"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "{{local}}/admin/update-account",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "gfg_token_header_key",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiRnJpIE1hciAxNSAyMDI0IDE1OjU4OjUxIEdNVCswODAwIChQaGlsaXBwaW5lIFN0YW5kYXJkIFRpbWUpIiwidXNlcklkIjoxMiwiaWF0IjoxNzEwNDg5NTMxfQ.cnqrh2VUH3vO1pTsBnvEclfij7wvWrN7V58aXoHakgU",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"emailAddress\": \"exflem@gmail.com\",\n    \"name\": \"No Name\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{local}}/admin/update-account",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"admin",
+										"update-account"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "{{local}}/admin/list-account",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "gfg_token_header_key",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiRnJpIE1hciAxNSAyMDI0IDE1OjU4OjUxIEdNVCswODAwIChQaGlsaXBwaW5lIFN0YW5kYXJkIFRpbWUpIiwidXNlcklkIjoxMiwiaWF0IjoxNzEwNDg5NTMxfQ.cnqrh2VUH3vO1pTsBnvEclfij7wvWrN7V58aXoHakgU",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{local}}/admin/list-account?appName=&emailAddress&name=&active=TRuE&offset=&limit=",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"admin",
+										"list-account"
+									],
+									"query": [
+										{
+											"key": "appName",
+											"value": ""
+										},
+										{
+											"key": "emailAddress",
+											"value": null
+										},
+										{
+											"key": "name",
+											"value": ""
+										},
+										{
+											"key": "active",
+											"value": "TRuE"
+										},
+										{
+											"key": "offset",
+											"value": ""
+										},
+										{
+											"key": "limit",
+											"value": ""
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "{{local}}/admin/list-role-permission",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "gfg_token_header_key",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiRnJpIE1hciAxNSAyMDI0IDE1OjU4OjUxIEdNVCswODAwIChQaGlsaXBwaW5lIFN0YW5kYXJkIFRpbWUpIiwidXNlcklkIjoxMiwiaWF0IjoxNzEwNDg5NTMxfQ.cnqrh2VUH3vO1pTsBnvEclfij7wvWrN7V58aXoHakgU",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{local}}/admin/list-role-permission?emailAddress=jirase2328@adstam.com",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"admin",
+										"list-role-permission"
+									],
+									"query": [
+										{
+											"key": "emailAddress",
+											"value": "jirase2328@adstam.com"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "{{local}}/auth/login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "gfg_token_header_key",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiRnJpIE1hciAxNSAyMDI0IDE1OjU4OjUxIEdNVCswODAwIChQaGlsaXBwaW5lIFN0YW5kYXJkIFRpbWUpIiwidXNlcklkIjoxMiwiaWF0IjoxNzEwNDg5NTMxfQ.cnqrh2VUH3vO1pTsBnvEclfij7wvWrN7V58aXoHakgU",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"appName\": \"Test AppName\",\n    // \"emailAddress\": \"jirase2328@adstam.com\",\n    \"emailAddress\": \"milmalinowskaya@meldedigital.com\",\n    \"password\": \"MyPassword2024ABCD\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}/auth/login",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{local}}/auth/register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"appName\": \"DEALER_DASHBOARD\",\n    \"emailAddress\": \"bejiyi8163@em2lab.com\",\n    \"password\": \"MyPassword2024ABC\",\n    \"name\": \"Bejiyi\",\n    \"isMobile\": false,\n    \"mobileNumber\": \"09123456789\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}/auth/register",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{local}}/auth/enable-2fa",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"emailAddress\": \"testemail99@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}/auth/enable-2fa",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"auth",
+								"enable-2fa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{local}}/auth/verify-2fa",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"emailAddress\": \"jirase2328@adstam.com\",\n    \"token\": \"573138\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}/auth/verify-2fa",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"auth",
+								"verify-2fa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{local}}/auth/refresh",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "gfg_token_header_key",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiRnJpIE1hciAxNSAyMDI0IDE1OjU4OjUxIEdNVCswODAwIChQaGlsaXBwaW5lIFN0YW5kYXJkIFRpbWUpIiwidXNlcklkIjoxMiwiaWF0IjoxNzEwNDg5NTMxfQ.cnqrh2VUH3vO1pTsBnvEclfij7wvWrN7V58aXoHakgU",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}/auth/refresh",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"auth",
+								"refresh"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{local}}/account/resetPassword",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"emailAddress\": \"jirase2328@adstam.com\" \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}/account/resetPassword",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"account",
+								"resetPassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{local}}/account/checkOTP",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"emailAddress\": \"jirase2328@adstam.com\",\n    \"OTP\": 5661\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}/account/checkOTP",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"account",
+								"checkOTP"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{local}}/account/changePassword",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"emailAddress\": \"jirase2328@adstam.com\",\n    \"currentPassword\": \"MyPassword2024ABCDEF\",\n    \"newPassword\": \"MyPassword2024ABC\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}/account/changePassword",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"account",
+								"changePassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{local}}/auth/logout",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}/auth/logout",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"auth",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
