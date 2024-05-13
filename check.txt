@@ -1,0 +1,12 @@
+-- Reset Password
+ > check password reqs
+
+
+Dashboard - manage
+
+Unlock Account 
+List Account (Filter by AppName, Search, Pagination)
+Reset Account
+Update Account
+Delete Account
+Deactivate Account
