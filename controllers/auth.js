@@ -260,11 +260,16 @@ const logout = async (req, res) => {
         const cookie = authHeader.split('=')[1];
         const accessToken = cookie.split(';')[0];
         const checkIfBlacklisted = await Blacklist.findOne({ where: { token: accessToken } });
+        const token = await RefreshToken.findOne({ where: { token: accessToken } });
         if (checkIfBlacklisted) return res.sendStatus(204);
 
         const newBlacklist = new Blacklist({
             token: accessToken,
         });
+
+        console.log('token >>>', token);
+
+        await token.update({ isActive: false });
 
         await newBlacklist.save();
         res.setHeader('Clear-Site-Data', '"cookies"');
